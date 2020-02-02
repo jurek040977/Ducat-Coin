@@ -24,8 +24,8 @@ static const int64_t DARKSEND_COLLATERAL = (50*COIN);
 static const int64_t DARKSEND_POOL_MAX = (4999.99*COIN);
 
 static const int64_t STATIC_POS_REWARD = 3 * COIN; //Constant reward of 3.5 DC per COIN
-static const int64_t TARGET_SPACING = 3 * 60; // 2 min per Block
-static const int64_t TARGET_SPACING2 = 3 * 60; // 2 min per Block
+static const int64_t TARGET_SPACING = 3 * 60; // 3 min per Block
+static const int64_t TARGET_SPACING2 = 3 * 60; // 3 min per Block
 static const int64_t STAKE_TIMESPAN_SWITCH_TIME = 1508858115;
 static const int64_t STAKE_TIMESPAN_SWITCH_TIME1 = 1509555600; //1 Nov 2017 17:00:00 GMT
 static const int64_t FORK_TIME = 1510059600;  //November 7, 2017 1:00:00 PM GMT
