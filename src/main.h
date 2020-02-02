@@ -24,8 +24,8 @@ static const int64_t DARKSEND_COLLATERAL = (50*COIN);
 static const int64_t DARKSEND_POOL_MAX = (4999.99*COIN);
 
 static const int64_t STATIC_POS_REWARD = 3 * COIN; //Constant reward of 3.5 DC per COIN
-static const int64_t TARGET_SPACING = 2 * 60; // 2 min per Block
-static const int64_t TARGET_SPACING2 = 2 * 60; // 2 min per Block
+static const int64_t TARGET_SPACING = 3 * 60; // 2 min per Block
+static const int64_t TARGET_SPACING2 = 3 * 60; // 2 min per Block
 static const int64_t STAKE_TIMESPAN_SWITCH_TIME = 1508858115;
 static const int64_t STAKE_TIMESPAN_SWITCH_TIME1 = 1509555600; //1 Nov 2017 17:00:00 GMT
 static const int64_t FORK_TIME = 1510059600;  //November 7, 2017 1:00:00 PM GMT
@@ -62,7 +62,7 @@ static const unsigned int MAX_ORPHAN_TRANSACTIONS = MAX_BLOCK_SIZE/100;
 /** Default for -maxorphanblocks, maximum number of orphan blocks kept in memory */
 static const unsigned int DEFAULT_MAX_ORPHAN_BLOCKS = 750;
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
-static const int64_t MIN_TX_FEE = 1000000;
+static const int64_t MIN_TX_FEE = 10000;
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying) */
 static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
 /** No amount larger than this (in satoshi) is valid */
@@ -77,7 +77,7 @@ inline int64_t FutureDrift(int64_t nTime) { return nTime + DRIFT; }
 /** "reject" message codes **/
 static const unsigned char REJECT_INVALID = 0x10;
 
-inline int64_t GetMNCollateral(int nHeight) { return 3500; }
+inline int64_t GetMNCollateral(int nHeight) { return 10000; }
 
 extern CScript COINBASE_FLAGS;
 extern CCriticalSection cs_main;
