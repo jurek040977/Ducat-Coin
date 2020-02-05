@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Send Coins</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(255, 255, 255);
+background:url(:/images/background4);</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1,0">
    <property name="bottomMargin">
     <number>8</number>
@@ -173,7 +177,16 @@
            <string notr="true"/>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayoutCoinControl5">
-           <property name="margin">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
             <number>0</number>
            </property>
            <item>
@@ -571,6 +584,10 @@
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="styleSheet">
+             <string notr="true">background:rgb(255, 255, 255);
+color:rgb(0, 0, 0);</string>
+            </property>
            </widget>
           </item>
           <item>
@@ -625,12 +642,21 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>830</width>
-        <height>165</height>
+        <width>824</width>
+        <height>138</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
-       <property name="margin">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
         <number>0</number>
        </property>
        <item>
@@ -699,7 +725,7 @@
        <property name="spacing">
         <number>3</number>
        </property>
-        <item>
+       <item>
         <widget class="QCheckBox" name="checkUseDarksend">
          <property name="minimumSize">
           <size>
@@ -788,6 +814,11 @@
        </property>
        <property name="toolTip">
         <string>Confirm the send action</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color: rgb(255, 255, 255);
+background:qlineargradient(spread:pad, x1:0.155, y1:1, x2:0.610837, y2:0.045, stop:0.980296 rgba(52, 132, 237, 255));</string>
        </property>
        <property name="text">
         <string>S&amp;end</string>

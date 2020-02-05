@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Configure Darksend</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background: url(:/images/background3);
+color: rgb(255, 255, 255);</string>
+  </property>
   <widget class="QPushButton" name="buttonBasic">
    <property name="geometry">
     <rect>
@@ -183,6 +187,8 @@
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../bitcoin.qrc"/>
+ </resources>
  <connections/>
 </ui>

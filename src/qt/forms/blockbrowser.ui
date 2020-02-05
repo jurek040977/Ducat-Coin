@@ -34,6 +34,10 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background:url(:/images/background3);
+color: rgb(255, 255, 255);</string>
+  </property>
   <layout class="QGridLayout">
    <property name="sizeConstraint">
     <enum>QLayout::SetMaximumSize</enum>
@@ -197,6 +201,9 @@
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:rgb(0, 0, 0); </string>
           </property>
           <property name="maximum">
            <number>99999999</number>
@@ -381,6 +388,10 @@
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
+          <property name="styleSheet">
+           <string notr="true">background:rgb(255, 255, 255);
+color:rgb(0, 0, 0);</string>
+          </property>
           <property name="inputMask">
            <string comment="Transaction id" extracomment="Transaction id"/>
           </property>
@@ -409,6 +420,8 @@
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="../bitcoin.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -7,11 +7,15 @@
     <x>0</x>
     <y>0</y>
     <width>793</width>
-    <height>419</height>
+    <height>426</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Address Book</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:url(:/images/background3);
+color: rgb(255, 255, 255);</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
@@ -34,6 +38,10 @@
      </property>
      <property name="toolTip">
       <string>Click on a message to view it</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
      </property>
      <property name="tabKeyNavigation">
       <bool>false</bool>
@@ -100,6 +108,10 @@
           </item>
           <item>
            <widget class="QLabel" name="contactLabel">
+            <property name="styleSheet">
+             <string notr="true">background:rgb(255, 255, 255);
+color:rgb(0, 0, 0);</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -123,7 +135,10 @@
         <item>
          <widget class="QListView" name="listConversation">
           <property name="styleSheet">
-           <string notr="true">#listConversation { color: #000000; }</string>
+           <string notr="true">
+background: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
           </property>
          </widget>
         </item>
@@ -202,6 +217,9 @@
         <widget class="QPushButton" name="deleteButton">
          <property name="toolTip">
           <string>Delete the currently selected address from the list</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
          </property>
          <property name="text">
           <string>&amp;Delete</string>

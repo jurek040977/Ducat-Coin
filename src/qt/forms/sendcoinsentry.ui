@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background:url(:/images/background4);
+color: rgb(255, 255, 255);</string>
+  </property>
   <property name="frameShape">
    <enum>QFrame::StyledPanel</enum>
   </property>
@@ -69,12 +73,19 @@
        <property name="toolTip">
         <string>Enter a label for this address to add it to your address book</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background:rgb(255, 255, 255);
+color:rgb(0, 0, 0);</string>
+       </property>
       </widget>
      </item>
      <item>
       <widget class="QToolButton" name="addressBookButton">
        <property name="toolTip">
         <string>Choose address from address book</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string/>
@@ -93,18 +104,15 @@
    <item row="8" column="1">
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="BitcoinAmountField" name="payAmount">
-       <zorder>deleteButton</zorder>
-       <zorder>deleteButton</zorder>
-       <zorder>deleteButton</zorder>
-       <zorder>deleteButton</zorder>
-       <zorder>deleteButton</zorder>
-      </widget>
+      <widget class="BitcoinAmountField" name="payAmount"/>
      </item>
      <item>
       <widget class="QToolButton" name="deleteButton">
        <property name="toolTip">
         <string>Remove this recipient</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string/>
@@ -124,6 +132,10 @@
        <property name="toolTip">
         <string>The address to send the payment to (e.g. C8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background:rgb(255, 255, 255);
+color:rgb(0, 0, 0);</string>
+       </property>
        <property name="maxLength">
         <number>80</number>
        </property>
@@ -133,6 +145,9 @@
       <widget class="QToolButton" name="pasteButton">
        <property name="toolTip">
         <string>Paste address from clipboard</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string/>
@@ -152,15 +167,15 @@
  </widget>
  <customwidgets>
   <customwidget>
+   <class>BitcoinAmountField</class>
+   <extends>QSpinBox</extends>
+   <header>bitcoinamountfield.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
    <class>QValidatedLineEdit</class>
    <extends>QLineEdit</extends>
    <header>qvalidatedlineedit.h</header>
-  </customwidget>
-  <customwidget>
-   <class>BitcoinAmountField</class>
-   <extends>QLineEdit</extends>
-   <header>bitcoinamountfield.h</header>
-   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources>
